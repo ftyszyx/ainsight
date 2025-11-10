@@ -1,0 +1,4 @@
+{
+    "python.venvPath": "${workspaceFolder}/market/.venv",
+    "python.defaultInterpreterPath": "${workspaceFolder}/market/.venv/Scripts/python.exe"
+}
