@@ -1,4 +1,19 @@
 {
     "python.venvPath": "${workspaceFolder}/market/.venv",
-    "python.defaultInterpreterPath": "${workspaceFolder}/market/.venv/Scripts/python.exe"
+    "python.defaultInterpreterPath": "${workspaceFolder}/market/.venv/Scripts/python.exe",
+    "cursor.general.globalCursorIgnoreList": [
+        "**/credentials.json",
+        "**/credentials.*.json",
+        "**/secret.json",
+        "**/secrets.json",
+        "**/*.key",
+        "**/*.pem",
+        "**/*.pfx",
+        "**/*.p12",
+        "**/*.crt",
+        "**/*.cer",
+        "**/id_rsa",
+        "**/id_dsa",
+        "**/.ssh/id_*"
+    ]
 }
