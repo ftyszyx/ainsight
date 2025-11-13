@@ -7,13 +7,18 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "apache-airflow[celery]==3.0.0",
     "httpx>=0.27.0",
     "jieba>=0.42.1",
-    "oss2>=2.19.1",
     "pandas>=2.3.3",
     "pgvector>=0.4.1",
     "psycopg2-binary>=2.9.11",
+    "python-dotenv>=1.0.1",
     "sqlalchemy>=1.4.54",
     "tushare>=1.4.24",
 ]
+
+[project.scripts]
+market-fetch-daily = "market.jobs.fetch_daily:main"
+market-sync-financials = "market.jobs.sync_financials:main"
+market-sync-reports = "market.jobs.sync_reports:main"
+market-calc-features = "market.jobs.calc_features:main"
